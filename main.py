@@ -18,8 +18,8 @@ y = hap.iloc[:130, 1]
 y = np.array([1 if i >= 5 else 0 for i in y]).reshape(130, 1)
       
 #  Her Satır bir eğitim örneği, her sütun bir özellik  [X1, X2, X3]
-giris_seti = np.array((x.values), dtype=float) # (149, 8)
-labels = y # (149, 1)  
+giris_seti = np.array((x.values), dtype=float) # (130, 8)
+labels = y # (130 1)  
 
 np.random.seed(42)
 agirliklar = np.random.rand(8,1)
